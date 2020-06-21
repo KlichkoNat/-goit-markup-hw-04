@@ -146,6 +146,7 @@ a:hover.button {
 a:hover.button-footer {
   color: white !important;
 }
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -220,11 +221,24 @@ ul {
 .phone:hover {
   color: #2196f3;
 }
+.phone-icone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
 .contacts {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 305px;
+}
+.contacts-.item:focus {
+  -moz-text-decoration-color: #2196f3;
+  --color4: #2196f3;
 }
 .contact-mail {
   display: flex;
@@ -234,12 +248,24 @@ ul {
   height: 11.2px;
   margin-right: 10px;
 }
+.contact-mail:hover {
+  --color4: #2196f3;
+}
+.contact-mail:hover svg {
+  --color4: #2196f3;
+}
+.contact:hover svg {
+  --color4: #2196f3;
+}
 .contacts-item {
   display: flex;
   margin-right: 30px;
 }
 .contacts-item:last-child {
   margin-right: 0;
+}
+.contacts-item:focus {
+  color: #2196f3;
 }
 .contact-tel {
   display: flex;
@@ -432,7 +458,7 @@ h3 {
 .heading-title {
   margin-right: 30px;
 }
-.heading-title :last-child {
+.heading-title:last-child {
   margin-right: 0;
 }
 .heading-title a {
@@ -443,11 +469,11 @@ h3 {
   display: flex;
   justify-content: center;
 }
-.meta :last-child {
+.meta:last-child {
   margin-right: 0;
 }
 .title {
-  color: #ffffff;
+  color: #212121;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -604,15 +630,23 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-.widget-button {
+.button-w {
   display: inline-block;
   text-align: center;
   padding: 6px 22px;
   margin-right: 8px;
-  background: #2196f3;
+  background: #f5f4fa;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+.button-w:hover {
+  background: #2196f3;
+  color: #ffffff;
+}
+.button-w:focus {
+  background: #2196f3;
+  color: #ffffff;
 }
 .avatar {
   margin-right: 69px;
