@@ -89,7 +89,6 @@ body {
   width: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -105,7 +104,7 @@ body {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-.flex-element:focus {
+.subject-title:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -156,6 +155,9 @@ a:hover.button {
 }
 a:hover.button-footer {
   color: white !important;
+}
+a:hover.subject-title {
+  color: #212121 !important;
 }
 
 ul {
@@ -508,14 +510,7 @@ h3 {
 .meta:last-child {
   margin-right: 0;
 }
-.title {
-  color: #212121;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-}
+
 .subject {
   padding-left: 24px;
   padding-right: 24px;
@@ -528,11 +523,12 @@ h3 {
   letter-spacing: 0.06em;
 }
 .subject-title {
-  margin-bottom: 20px;
+  display: block;
+  padding-bottom: 20px;
 }
 .subtitle {
   width: 322px;
-  margin-left: 24px;
+  padding-left: 24px;
   padding-right: 24px;
   margin-top: 0;
   font-style: normal;
@@ -704,7 +700,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-.button-w {
+
+.title {
   display: inline-block;
   outline: none;
   text-align: center;
@@ -713,8 +710,14 @@ h3 {
   background: #f5f4fa;
   border-radius: 4px;
   box-shadow: none;
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
 }
-.button-w:hover {
+.title:hover {
   color: #ffffff;
   background: #2196f3;
   /* shadow-middle */
@@ -723,7 +726,7 @@ h3 {
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-.button-w:focus {
+.title:focus {
   color: #ffffff;
   background: #2196f3;
   /* shadow-middle */
@@ -732,6 +735,7 @@ h3 {
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+
 .avatar {
   margin-right: 69px;
   margin-left: 214px;
